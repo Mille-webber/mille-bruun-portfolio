@@ -173,11 +173,12 @@
     .video-section { background: var(--dark); }
 
     .video-section-label {
-      padding: 2.5rem 3rem 1.5rem;
+      
       font-size: 16px;
       text-transform: uppercase;
       letter-spacing: .1em;
       color: rgba(255,255,255,.4);
+      margin-bottom: 10px;
     }
 
     /* two videos, no gap/border between them */
@@ -226,13 +227,12 @@
     .img-text-row {
       display: grid;
       grid-template-columns: 1.4fr 1fr;
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
+      
     }
     .img-slideshow {
       position: relative;
       overflow: hidden;
-      aspect-ratio: 4/3;
+      aspect-ratio: 5.5/3;
       background: var(--dark);
     }
     .img-slideshow img {
@@ -430,7 +430,7 @@
        two videos side by side, one text strip below
        ============================================= -->
   <div class="video-section">
-    <div class="video-section-label">The animation</div>
+    
     <div class="video-duo">
       <div class="video-wrap">
         <video src="Bogforum-video.mp4" autoplay muted loop playsinline controls></video>
@@ -441,11 +441,12 @@
     </div>
     <!-- one continuous text strip below both videos -->
     <div class="video-text-strip">
+      <div class="video-section-label">The animation</div>
       <p>The stand overview - one continuous video running across four projectors, each starting at a different timestamp. No two walls ever show the same author. When a book had multiple authors, showing all of them wasn't possible. Instead the book took centre stage - cropped large, no author portrait, full focus on the cover.</p>
       <div class="video-text-right">
         <span class="handwritten">
           when in doubt, let the book speak
-          <img src="arrow-up.svg" style="height:.9em;vertical-align:middle;transform:rotate(90deg)">
+          <img src="arrow-up.svg" style="height:.9em;vertical-align:middle;transform:rotate(0deg);margin-bottom: 20px;">
         </span>
       </div>
     </div>
@@ -468,7 +469,7 @@
       <div class="caption-label">Print between projections</div>
       <p>Above the tall bookshelves, where projection wasn't possible, smaller print panels carried the same visual language - diagonal shapes, gradient backgrounds, author and book side by side. The same system, different medium.</p>
       <span class="handwritten-dark">
-        <img src="arrow-left.svg" style="height:.9em;vertical-align:middle">
+        <img src="arrow-left.svg" style="height:.4em;vertical-align:middle">
         print + motion, one language
       </span>
     </div>
